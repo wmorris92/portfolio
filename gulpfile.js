@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat')
 var rename = require('gulp-rename');
 
-var staticData = require('./data/static-data.json');
+var staticData = require('./data/staticData.json');
 
 gulp.task('sass', function() {
 	gulp.src(['public/_sass/*.css', 'public/_sass/*.scss'])
@@ -39,21 +39,21 @@ gulp.task('enrich', function(){
 		}
 	}
 
-	gulp.src('src/education.handlebars')
-		.pipe(handlebars(staticData, options))
-		.pipe(rename('education.html'))
-		.pipe(gulp.dest('dist'));
+	// gulp.src('src/education.handlebars')
+	// 	.pipe(handlebars(staticData, options))
+	// 	.pipe(rename('education.html'))
+	// 	.pipe(gulp.dest('dist'));
 
 
-	gulp.src('src/photography.handlebars')
-		.pipe(handlebars(staticData, options))
-		.pipe(rename('photography.html'))
-		.pipe(gulp.dest('dist'));
-
-	gulp.src('src/experience.handlebars')
-		.pipe(handlebars(staticData, options))
-		.pipe(rename('experience.html'))
-		.pipe(gulp.dest('dist'));
+	// gulp.src('src/photography.handlebars')
+	// 	.pipe(handlebars(staticData, options))
+	// 	.pipe(rename('photography.html'))
+	// 	.pipe(gulp.dest('dist'));
+	//
+	// gulp.src('src/experience.handlebars')
+	// 	.pipe(handlebars(staticData, options))
+	// 	.pipe(rename('experience.html'))
+	// 	.pipe(gulp.dest('dist'));
 
 	gulp.src('src/main.handlebars')
 		.pipe(handlebars(staticData, options))

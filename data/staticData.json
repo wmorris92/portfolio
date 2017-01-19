@@ -1,6 +1,11 @@
 {
   "pageTitle": "William Morris",
+  "myName": "Will<b>Morris</b>",
   "social": {
-    "email": "will.morris00@gmail.com"
-  }
+    "email": "mailto:will.morris00@gmail.com",
+    "twitter": "https://twitter.com/wmorris92",
+    "linkedin": "",
+    "github": "github"
+  },
+  "openingStatement": "I write code for Yoox Net-A-Porter"
 }
