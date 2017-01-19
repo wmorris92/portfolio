@@ -25,8 +25,8 @@ gulp.task('images', function() {
 	gulp.src('public/images/*')
         .pipe(gulp.dest('dist/images'));
 
-	gulp.src('public/images/svg-icons/*')
-			.pipe(gulp.dest('dist/images/svg-icons'));
+	gulp.src('public/images/social/*')
+			.pipe(gulp.dest('dist/images/social'));
 })
 
 gulp.task('enrich', function(){
