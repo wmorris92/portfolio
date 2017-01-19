@@ -4,18 +4,21 @@
 {{> head}}
 
 <body>
-  <div class="avatar">
-    <img src='images/avatar.png' width="150" />
-  </div>
+  <div class="flex-container">
+    <div class="flex-item">
+      <div class="avatar">
+        <img src='images/avatar.png' width="150" />
+      </div>
 
-  <div class="writing">
-    <div class="writing-title">
-        {{{myName}}}
-    </div>
-    <div class="writing-subtitle">
-      {{openingStatement}}
+      <div class="writing">
+        <div class="writing-title">
+          {{{myName}}}
+        </div>
+        <div class="writing-subtitle">
+          {{openingStatement}}
+        </div>
+      </div>
     </div>
   </div>
-
 </body>
 </html>
