@@ -36,18 +36,25 @@ body {
 
 .writing-title {
   font-size: 1.8rem;
+  padding-bottom: 10px;
 }
 
 .writing-subtitle {
   font-size: 1.2rem;
 }
 
-.social-media {
-  list-style-type: none;
+.social-icons {
+  list-style: none;
   padding-top: 40px;
+  padding-left: 0px;
+  text-align: center;
 
   li {
-    display: inline;
+    display: inline-block;
     padding-right: 10px;
+    img {
+      height: 40px;
+      width: auto;
+    }
   }
 }
